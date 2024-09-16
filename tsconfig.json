@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "types": ["@nuxt/types"],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
