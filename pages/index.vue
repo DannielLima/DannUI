@@ -32,8 +32,62 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-16 flex-grow" id="components">
+      <!-- Summary Section -->
+      <section class="bg-white py-8 shadow-md mb-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-6">Summary</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              <a href="#card" class="text-blue-500 hover:underline"
+                >Card Component</a
+              >
+            </li>
+            <li>
+              <a href="#button" class="text-blue-500 hover:underline"
+                >Button Component</a
+              >
+            </li>
+            <li>
+              <a href="#alert" class="text-blue-500 hover:underline"
+                >Alert Component</a
+              >
+            </li>
+            <li>
+              <a href="#dropdown" class="text-blue-500 hover:underline"
+                >Dropdown Component</a
+              >
+            </li>
+            <li>
+              <a href="#modal" class="text-blue-500 hover:underline"
+                >Modal Component</a
+              >
+            </li>
+            <li>
+              <a href="#tabs" class="text-blue-500 hover:underline"
+                >Tabs Component</a
+              >
+            </li>
+            <li>
+              <a href="#accordion" class="text-blue-500 hover:underline"
+                >Accordion Component</a
+              >
+            </li>
+            <li>
+              <a href="#pagination" class="text-blue-500 hover:underline"
+                >Pagination Component</a
+              >
+            </li>
+            <li>
+              <a href="#tooltip" class="text-blue-500 hover:underline"
+                >Tooltip Component</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Card Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="card">
         <h2 class="text-4xl font-bold text-center mb-12">Card Component</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           <Card color="white">
@@ -66,7 +120,7 @@
       </section>
 
       <!-- Button Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="button">
         <h2 class="text-4xl font-bold text-center mb-12">Button Component</h2>
         <div class="flex justify-center space-x-6">
           <Button color="primary" size="md">Primary</Button>
@@ -76,7 +130,7 @@
       </section>
 
       <!-- Alert Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="alert">
         <h2 class="text-4xl font-bold text-center mb-12">Alert Component</h2>
         <div class="space-y-4">
           <Alert type="info" message="This is an info alert!" />
@@ -87,7 +141,7 @@
       </section>
 
       <!-- Dropdown Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="dropdown">
         <h2 class="text-4xl font-bold text-center mb-12">Dropdown Component</h2>
         <div class="flex justify-center">
           <Dropdown
@@ -100,7 +154,7 @@
       </section>
 
       <!-- Modal Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="modal">
         <h2 class="text-4xl font-bold text-center mb-12">Modal Component</h2>
         <div class="flex justify-center">
           <Button color="primary" @click="openModal">Open Modal</Button>
@@ -119,7 +173,7 @@
       </section>
 
       <!-- Tabs Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="tabs">
         <h2 class="text-4xl font-bold text-center mb-12">Tabs Component</h2>
         <div class="flex justify-center space-x-6">
           <Tabs
@@ -139,7 +193,7 @@
       </section>
 
       <!-- Accordion Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="accordion">
         <h2 class="text-4xl font-bold text-center mb-12">
           Accordion Component
         </h2>
@@ -152,7 +206,7 @@
       </section>
 
       <!-- Pagination Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="pagination">
         <h2 class="text-4xl font-bold text-center mb-12">
           Pagination Component
         </h2>
@@ -164,7 +218,7 @@
       </section>
 
       <!-- Tooltip Section -->
-      <section class="mb-16">
+      <section class="mb-16" id="tooltip">
         <h2 class="text-4xl font-bold text-center mb-12">Tooltip Component</h2>
         <div class="flex justify-center">
           <Tooltip text="Tooltip Example">
