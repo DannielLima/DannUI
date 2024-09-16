@@ -97,7 +97,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
+    <footer class="bg-gray-900 rounded-t-lg text-white text-center py-6">
       <p>Developed by <a href="https://github.com/DannielLima" class="underline hover:text-blue-400 transition" target="_blank">Danniel Lima</a></p>
     </footer>
   </div>

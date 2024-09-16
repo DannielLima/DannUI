@@ -37,7 +37,7 @@ const toggleDropdown = () => {
 
 const handleItemClick = (item) => {
   isOpen.value = false;
-  emit("select", item); // Emite o evento 'select' quando um item é clicado
+  emit("select", item);
 };
 
 const handleClickOutside = (event) => {
