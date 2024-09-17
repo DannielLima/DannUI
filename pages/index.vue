@@ -82,13 +82,28 @@
                 >Tooltip Component</a
               >
             </li>
+            <li>
+              <a href="#badge" class="text-blue-500 hover:underline"
+                >Badge Component</a
+              >
+            </li>
+            <li>
+              <a href="#progress" class="text-blue-500 hover:underline"
+                >ProgressBar Component</a
+              >
+            </li>
+            <li>
+              <a href="#spinner" class="text-blue-500 hover:underline"
+                >Spinner Component</a
+              >
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- Card Section -->
       <section class="mb-16" id="card">
-        <h2 class="text-4xl font-bold text-center mb-12">Card Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Card</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           <Card color="white">
             <template #header>
@@ -121,7 +136,7 @@
 
       <!-- Button Section -->
       <section class="mb-16" id="button">
-        <h2 class="text-4xl font-bold text-center mb-12">Button Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Button</h2>
         <div class="flex justify-center space-x-6">
           <Button color="primary" size="md">Primary</Button>
           <Button color="secondary" size="md">Secondary</Button>
@@ -131,7 +146,7 @@
 
       <!-- Alert Section -->
       <section class="mb-16" id="alert">
-        <h2 class="text-4xl font-bold text-center mb-12">Alert Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Alert</h2>
         <div class="space-y-4">
           <Alert type="info" message="This is an info alert!" />
           <Alert type="success" message="This is a success alert!" />
@@ -142,7 +157,7 @@
 
       <!-- Dropdown Section -->
       <section class="mb-16" id="dropdown">
-        <h2 class="text-4xl font-bold text-center mb-12">Dropdown Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Dropdown</h2>
         <div class="flex justify-center">
           <Dropdown
             label="Select an option"
@@ -155,7 +170,7 @@
 
       <!-- Modal Section -->
       <section class="mb-16" id="modal">
-        <h2 class="text-4xl font-bold text-center mb-12">Modal Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Modal</h2>
         <div class="flex justify-center">
           <Button color="primary" @click="openModal">Open Modal</Button>
         </div>
@@ -174,7 +189,7 @@
 
       <!-- Tabs Section -->
       <section class="mb-16" id="tabs">
-        <h2 class="text-4xl font-bold text-center mb-12">Tabs Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Tabs</h2>
         <div class="flex justify-center space-x-6">
           <Tabs
             :tabs="[
@@ -194,9 +209,7 @@
 
       <!-- Accordion Section -->
       <section class="mb-16" id="accordion">
-        <h2 class="text-4xl font-bold text-center mb-12">
-          Accordion Component
-        </h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Accordion</h2>
         <Accordion title="Accordion 1">
           <p>Accordion Content 1</p>
         </Accordion>
@@ -207,9 +220,7 @@
 
       <!-- Pagination Section -->
       <section class="mb-16" id="pagination">
-        <h2 class="text-4xl font-bold text-center mb-12">
-          Pagination Component
-        </h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Pagination</h2>
         <Pagination
           :totalPages="5"
           :currentPage="currentPage"
@@ -219,13 +230,40 @@
 
       <!-- Tooltip Section -->
       <section class="mb-16" id="tooltip">
-        <h2 class="text-4xl font-bold text-center mb-12">Tooltip Component</h2>
+        <h2 class="text-4xl font-bold text-center mb-12">Tooltip</h2>
         <div class="flex justify-center">
           <Tooltip text="Tooltip Example">
             <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">
               Hover me
             </button>
           </Tooltip>
+        </div>
+      </section>
+
+      <!-- Badge Component -->
+      <section class="mb-16" id="badge">
+        <h2 class="text-4xl font-bold text-center mb-12">Badge</h2>
+        <div class="flex justify-center space-x-6">
+          <Badge label="Info" />
+          <Badge label="Success" type="success" />
+          <Badge label="Warning" type="warning" />
+          <Badge label="Danger" type="danger" />
+        </div>
+      </section>
+
+      <!-- ProgressBar Component -->
+      <section class="mb-16" id="progress">
+        <h2 class="text-4xl font-bold text-center mb-12">ProgressBar</h2>
+        <div class="flex justify-center">
+          <ProgressBar progress="50" />
+        </div>
+      </section>
+
+      <!-- Spinner Component -->
+      <section class="mb-16" id="spinner">
+        <h2 class="text-4xl font-bold text-center mb-12">Spinner</h2>
+        <div class="flex justify-center">
+          <Spinner size="large" color="blue-500" />
         </div>
       </section>
     </main>
@@ -257,6 +295,9 @@ import Tabs from "~/components/Tabs.vue";
 import Accordion from "~/components/Accordion.vue";
 import Pagination from "~/components/Pagination.vue";
 import Tooltip from "~/components/Tooltip.vue";
+import Badge from "~/components/Badge.vue";
+import ProgressBar from "~/components/ProgressBar.vue";
+import Spinner from "~/components/Spinner.vue";
 
 const isModalOpen = ref(false);
 const openModal = () => (isModalOpen.value = true);
